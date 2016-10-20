@@ -44,6 +44,8 @@ describe('RegistryItem', () => {
             itemWrapper = shallow(<RegistryItem itemDetails={itemData}/>);
         });
 
+        //RegistryItem(itemDetails, markAsPurchased)
+
         it('includes "name" line as an h1', () => {
             expect(itemWrapper.find('h1')).to.have.html('<h1>Item name: <span>Curtains</span></h1>');
         });
